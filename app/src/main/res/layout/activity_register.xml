@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:paddingHorizontal="@dimen/dp_20"
+        tools:context="uk.actees.aad.w9521088.Activity.RegisterActivity">
+
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:src="@drawable/ic_back"
+            android:padding="@dimen/dp_4"
+            android:layout_marginStart="@dimen/dp_3"
+            android:layout_marginTop="@dimen/dp_30"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/txtRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16"
+            android:fontFamily="@font/poppins_regular"
+            android:textFontWeight="300"
+            android:layout_marginStart="@dimen/dp_20"
+            app:layout_constraintStart_toEndOf="@+id/imgBack"
+            app:layout_constraintTop_toTopOf="@+id/imgBack"
+            app:layout_constraintBottom_toBottomOf="@+id/imgBack"/>
+
+        <TextView
+            android:id="@+id/txtRabbit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="@dimen/sp_18"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginTop="@dimen/dp_25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtRegister"/>
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:textColor="@color/gray2"
+            android:textSize="@dimen/sp_14"
+            android:textColorHint="@color/gray2"
+            android:fontFamily="@font/poppins_regular"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="@dimen/dp_20"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtRabbit"/>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/gray3"
+            app:layout_constraintTop_toBottomOf="@+id/edtName"/>
+
+        <EditText
+            android:id="@+id/edtLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/last_name"
+            android:textColor="@color/gray2"
+            android:textSize="@dimen/sp_14"
+            android:textColorHint="@color/gray2"
+            android:fontFamily="@font/poppins_regular"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="@dimen/dp_25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view1"/>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/gray3"
+            app:layout_constraintTop_toBottomOf="@+id/edtLastName"/>
+
+        <EditText
+            android:id="@+id/edtMobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/mobile"
+            android:textColor="@color/gray2"
+            android:textSize="@dimen/sp_14"
+            android:textColorHint="@color/gray2"
+            android:inputType="number"
+            android:maxLength="10"
+            android:fontFamily="@font/poppins_regular"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="@dimen/dp_25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2"/>
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/gray3"
+            app:layout_constraintTop_toBottomOf="@+id/edtMobile"/>
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:textColor="@color/gray2"
+            android:textSize="@dimen/sp_14"
+            android:textColorHint="@color/gray2"
+            android:fontFamily="@font/poppins_regular"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="@dimen/dp_25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view3"/>
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/gray3"
+            app:layout_constraintTop_toBottomOf="@+id/edtPassword"/>
+
+        <EditText
+            android:id="@+id/edtConfirmPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/confirm_password"
+            android:textColor="@color/gray2"
+            android:textSize="@dimen/sp_14"
+            android:textColorHint="@color/gray2"
+            android:fontFamily="@font/poppins_regular"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="@dimen/dp_25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view4"/>
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/gray3"
+            app:layout_constraintTop_toBottomOf="@+id/edtConfirmPassword"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:text="@string/register"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_regular"
+            android:textFontWeight="300"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_bg"
+            app:layout_constraintTop_toBottomOf="@+id/view5"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

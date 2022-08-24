@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/cons_Root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="@dimen/dp_10"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/consUniform"
+        android:layout_width="@dimen/dp_165"
+        android:layout_height="@dimen/dp_220"
+        android:background="@drawable/outline_bg_gray3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgUniform"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_category"
+            android:scaleType="fitXY"
+            android:padding="@dimen/dp_3"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_Wishlist"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            app:cardCornerRadius="@dimen/dp_15"
+            app:cardElevation="@dimen/dp_5"
+            app:cardBackgroundColor="@color/white"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/imgUniform">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgWishList"
+                    android:layout_width="@dimen/dp_25"
+                    android:layout_height="@dimen/dp_25"
+                    android:src="@drawable/img_wishlist"
+                    android:padding="@dimen/dp_4"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/txtUniformType"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="wrap_content"
+        android:text="@string/uniform_type"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/black"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_5"
+        app:layout_constraintStart_toStartOf="@+id/consUniform"
+        app:layout_constraintEnd_toEndOf="@+id/consUniform"
+        app:layout_constraintTop_toBottomOf="@+id/consUniform"/>
+
+    <TextView
+        android:id="@+id/txtRupeeSymbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rupee"
+        android:textSize="@dimen/sp_12"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/dp_5"
+        app:layout_constraintStart_toStartOf="@+id/txtUniformType"
+        app:layout_constraintTop_toBottomOf="@+id/txtUniformType"/>
+
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/unifrom_price"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_12"
+        app:layout_goneMarginTop="@dimen/dp_3"
+        android:layout_marginStart="@dimen/dp_3"
+        app:layout_constraintStart_toEndOf="@+id/txtRupeeSymbol"
+        app:layout_constraintTop_toTopOf="@+id/txtRupeeSymbol"
+        app:layout_constraintBottom_toBottomOf="@+id/txtRupeeSymbol"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
