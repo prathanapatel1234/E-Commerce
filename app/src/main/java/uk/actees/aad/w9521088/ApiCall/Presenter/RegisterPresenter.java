@@ -45,6 +45,7 @@ public class RegisterPresenter extends BasePresenter<IRegisterView>{
                     getView().enableLoadingBar(context, false);
                     t.printStackTrace();
                     getView().onError(null);
+                    Toast.makeText(context, "Something went wrong!", Toast.LENGTH_SHORT).show();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

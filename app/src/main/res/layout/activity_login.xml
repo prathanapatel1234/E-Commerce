@@ -87,6 +87,7 @@
             android:textColorHint="@color/gray2"
             android:fontFamily="@font/poppins_regular"
             android:maxLines="1"
+            android:inputType="textPassword"
             android:background="@android:color/transparent"
             android:layout_marginTop="@dimen/dp_25"
             app:layout_constraintStart_toStartOf="parent"
