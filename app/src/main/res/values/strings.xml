@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Parthna E-Commerce</string>
+    <string name="app_name">E-Commerce</string>
     <string name="login">Login</string>
     <string name="mobile">Mobile No.</string>
     <string name="password">Password</string>
@@ -14,7 +14,7 @@
     <string name="shortt">Short</string>
     <string name="filter">Filter</string>
     <string name="uniform_type">Winter Uniform Shirt</string>
-    <string name="rupee">$</string>
+    <string name="rupee">£</string>
     <string name="unifrom_price">599 Incl Tax</string>
     <string name="price">599</string>
     <string name="user_name">User Name</string>

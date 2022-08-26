@@ -25,7 +25,6 @@ public class TopperApp extends MultiDexApplication {
 
     private static TopperApp mInstance;
     private ApiService apiService, apiService1;
-    String androidId = "",pushRegId = "";
 
     public TopperApp() {
         super();

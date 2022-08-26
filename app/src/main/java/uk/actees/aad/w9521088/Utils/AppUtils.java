@@ -25,38 +25,4 @@ public class AppUtils {
         fragmentTransaction.commit();
     }
 
-    public static void goFragmentReplaceWithBackStack(Context context, Fragment fragment) {
-        FragmentTransaction fragmentTransaction = ((FragmentActivity) context).getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.FrameLayout, fragment);
-        fragmentTransaction.addToBackStack(null);
-        fragmentTransaction.commit();
-    }
-
-    public static void goFragmentAddWithoutBackStack(Context context, Fragment fragment) {
-
-        FragmentTransaction fragmentTransaction = ((FragmentActivity) context).getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.add(R.id.FrameLayout, fragment);
-        fragmentTransaction.addToBackStack(null);
-        //fragmentTransaction.commit();
-        fragmentTransaction.commitAllowingStateLoss();
-    }
-
-    public static void goFragmentReplaceWithoutBackStack(Context context, Fragment fragment) {
-
-        FragmentTransaction fragmentTransaction = ((FragmentActivity) context).getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.FrameLayout, fragment);
-        fragmentTransaction.addToBackStack(null);
-        //fragmentTransaction.commit();
-        fragmentTransaction.commitAllowingStateLoss();
-    }
-
-    public static void hideSoftKeyboard(Activity activity) {
-        final InputMethodManager inputMethodManager = (InputMethodManager) activity.getSystemService(Activity.INPUT_METHOD_SERVICE);
-        if (inputMethodManager.isActive()) {
-            if (activity.getCurrentFocus() != null) {
-                inputMethodManager.hideSoftInputFromWindow(activity.getCurrentFocus().getWindowToken(), 0);
-            }
-        }
-    }
-
 }
